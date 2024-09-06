@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Pet Shop - Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container text-center mt-5">
+  <h1>Welcome to <span th:text="${shopName}">My Pet Shop!</span></h1>
+  <p>Your one-stop shop for all your pet needs</p>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <h3>Pet Food</h3>
+      <p>High-quality food for your beloved pets.</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Accessories</h3>
+      <p>Find the perfect toys, collars, and more!</p>
+    </div>
+    <div class="col-md-4">
+      <h3>Grooming</h3>
+      <p>Everything you need for pet grooming.</p>
+    </div>
+  </div>
+
+  <a th:href="@{/shop}" class="btn btn-primary mt-4">Shop Now</a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
